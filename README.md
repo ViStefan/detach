@@ -51,3 +51,12 @@ ignore hangup and continue. Same with `disown`. Why thinking about detach in
 terms of background shell job? `detach` is more straightforward. Just `fork`,
 `exit` from parent to release terminal, set `stdout` and `stderr` to
 `/dev/null` if they are `tty`s and `execv` with arguments.
+
+# Zsh completion
+```shell
+compdef _precommand detach
+```
+
+# Bugs
+
+A musthave section in 13 LOC long software.
